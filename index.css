@@ -1,0 +1,190 @@
+/* タイトルのデザイン */
+h1 {
+  font-family: 'Hiragino Kaku Gothic Std';
+  font-size: 70px;
+  color: #00BB00;
+  background: -webkit-linear-gradient(30deg, #00BB00, #d9f1d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 全てのデータを削除ボタンのデザイン */
+#clearButton {
+  float: right;
+  transition: 300ms;
+}
+
+/* メニュー関係のデザイン */
+#menu {
+  margin: 50px 0px 0px 30px;
+}
+
+nav ul {
+  display: table;
+  margin-left: 20px;
+  padding: 0;
+  width: 30%;
+}
+
+nav li {
+  display: table-cell;
+  min-width: 50px;
+}
+
+nav input {
+  display: block;
+  outline: none;
+  border: none;
+  background: white;
+  height: 50px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 20px;
+  color: #00BB00;
+  padding-bottom: 5px;
+}
+
+nav li:hover {
+  border-bottom: 3px solid #00BB00;
+}
+
+#makeArea, #editArea, #memorizeArea {
+  margin: 30px 0px 0px 30px;
+  height: 100vh;
+}
+
+h2 {
+  color: #00BB00;
+  font-family: 'Hiragino Maru Gothic ProN';
+  text-shadow: 2px 2px #fff, 5px 5px rgba(53, 253, 4, 0.4);
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #00BB00;
+}
+
+/* 入力枠のデザイン */
+.inputDesign, .textareaDesign, .selectDesign {
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+  border-color: #00BB00;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.inputDesign {
+  height: 25px;
+  width: 20%;
+}
+
+.textareaDesign {
+  height: 100px;
+  width: 40%;
+}
+
+/* SAVEボタンと実行ボタンのデザイン */
+.execution, #clearButton {
+  display: inline-block;
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  padding: 10px 15px 10px 15px;
+  margin: 20px 50px 10px 5px;
+  background-color: #00BB00;
+  color: #fff;
+  transition: 300ms;
+}
+
+/* フォルダーボタンのデザイン */
+.folderButton {
+  display: inline-block;
+  background: #fff;
+  border: 2px solid #00BB00;
+  border-radius: 15px;
+  height: 50px;
+  padding: 10px 50px 10px 50px;
+  margin: 10px 10px 10px 10px;
+  color: #00BB00;
+  font-size: 16px;
+  transition-duration: 0.2s;
+}
+
+/* 編集エリアの単語編集のデザイン */
+.unitArea {
+  display: inline-block;
+  background-color: rgb(247, 241, 184);
+  border-radius: 15px;
+  padding: 1px 17px 17px 17px;
+  margin: 10px 10px 5px 10px;
+  text-align: center;
+  width: auto;
+}
+
+/* 削除・終了ボタンのデザイン */
+.deteteButton, #finishButton {
+  display: inline-block;
+  background-color: rgb(252, 54, 54);
+  border: none;
+  border-radius: 15px;
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+  transition: 300ms;
+}
+
+.deteteButton:hover, #finishButton:hover, .execution:hover, #clearButton:hover {
+  transform: scale(1.2,1.2);
+}
+
+/* 覚えるエリアのデザイン */
+#firstArea {
+  float: left;
+  width: 50%;
+}
+
+#secondArea {
+  float: right;
+  width: 50%;
+}
+
+.firstWord {
+  background-color: rgb(240, 113, 113);
+  color: #fff;
+}
+
+.secondWord {
+  background-color: #228bc8;
+  color: #fff;
+}
+
+.firstWord, .secondWord {
+  font-size: 17px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+  border: 0px;
+  transition: 300ms;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  outline: none;
+  z-index:1;
+}
+
+.firstWord:hover, .secondWord:hover {
+  transform: scale(1.2,1.2);
+}
+
+/* 「正解しました！」などのメッセージのデザイン */
+#messageArea {
+  position:fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 15px 30px;
+  background: black;
+  opacity: 80%;
+  text-align: center;
+  font-size: 30px;
+	width: 300px;
+}
