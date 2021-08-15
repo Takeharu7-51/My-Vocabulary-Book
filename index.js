@@ -12,15 +12,8 @@ let secondArea = document.getElementById('secondArea');
 let messageArea = document.getElementById('messageArea');
 let messageText = document.getElementById('messageText');
 messageArea.style.visibility = 'hidden';
-
-function folderClear() {
-  //confirmの結果でデータを削除するかしないかを分岐させる
-  let result = confirm('全てのデータを削除します。よろしいですか？');
-  if (result == true) {
-    localStorage.clear();
-    location.reload();
-  }
-}
+let tutorialArea = document.getElementById('tutorialArea');
+tutorialArea.style.visibility = 'hidden';
 
 // メニューの処理
 const array = ['editArea', 'memorizeArea'];
@@ -44,6 +37,15 @@ if (alreadyFolder != null) {
     folders.push(alreadyFolder[i]);
   }
   makeOption(folders);
+}
+
+function folderClear() {
+  //confirmの結果でデータを削除するかしないかを分岐させる
+  let result = confirm('全てのデータを削除します。よろしいですか？');
+  if (result == true) {
+    localStorage.clear();
+    location.reload();
+  }
 }
 
 // フォルダーの配列をもとにフォームを反映させる
@@ -352,4 +354,14 @@ function makeMessage(message, color) {
   messageText.innerText = message;
   messageText.style.color = color;
   setTimeout(function(){ messageArea.style.visibility = 'hidden'; }, 2000);
+}
+
+// チュートリアル画像の表示の実装
+function tutorialStart() {
+  tutorialArea.style.visibility = '';
+}
+
+// チュートリアル画像の非表示の実装
+function tutorialFinish() {
+  tutorialArea.style.visibility = 'hidden';
 }
