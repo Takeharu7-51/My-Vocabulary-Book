@@ -43,6 +43,7 @@
   </div>
 
   <div id="memorizeArea">
+    <input type="button" value="チュートリアルを表示" onclick="tutorialStart()" class="tutorialButton">
     <div id="chooseArea"><h3>覚える単語がありません</h3></div>
     <div id="supportArea"></div>
     <div id="firstArea"></div>
@@ -50,6 +51,10 @@
   </div>
 
   <div id="messageArea"><p id="messageText"></p></div>
+  <div id="tutorialArea">
+    <img src="img/tutorial.png" alt="チュートリアル画像" class="tutorialImage">
+    <input type="button" value="チュートリアルを終了する" onclick="tutorialFinish()" class="tutorialButton">
+  </div>
   <script src="index.js"></script>  
 </body>
 </html>
